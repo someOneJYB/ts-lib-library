@@ -75,3 +75,55 @@ Learn more about the power of Turborepo:
 - [Scoped Tasks](https://turborepo.org/docs/core-concepts/scopes)
 - [Configuration Options](https://turborepo.org/docs/reference/configuration)
 - [CLI Usage](https://turborepo.org/docs/reference/command-line-reference)
+
+### 好处在于包之间的调试方式更便捷
+
+### packages 专注于 ui 和 utils
+
+### apps 中将补充 react + vite ｜ webpack 项目， react 使用 18 版本
+
+### h5 和 系统，系统采用 tailwind 进行构建，增加 react ssr 项目
+
+### app 目录如下：
+
+### 工程辅助
+
+- [ESLint](https://eslint.org/)
+- [stylelint](https://stylelint.io/)
+- [Prettier](https://prettier.io/)
+- [commitlint](https://commitlint.js.org/)
+
+### 目录结构
+
+```
+├── config 配置
+├── global.d.ts 全局声明文件
+├── mock 文件夹
+├── public 文件夹存放 html 文件
+├── src
+│   ├── assets 公共资源目录
+│   │   ├── constants 公共常量目录
+│   │   ├── images 公共图片目录
+│   │   ├── styles 公共样式目录
+│   │   └── utils 公共方法目录
+│   ├── components 公共组件目录
+│   │   └── component 组件目录
+│   │       ├── index.module.less 页面样式文件
+│   │       └── index.tsx 页面文件
+│   ├── interfaces 公共接口目录
+│   ├── pages 页面目录
+│   │   └── page1 页面目录
+│   │       ├── components页面组件目录
+│   │       │   └── component 组件目录
+│   │       │       ├── component.module.less 组件样式文件
+│   │       │       └── component.tsx 组件文件
+│   │       ├── interfaces 页面接口目录
+│   │       │   └── index.ts 页面接口文件
+│   │       ├── index.module.less 页面样式
+│   │       ├── app.tsx 页面结构
+│   │       └── index.ts 入口文件
+│   └── services 接口目录
+└── README.md
+```
+
+### css 方案采用 module-css 和 styled-components（运行时的处理使用另一个库）
