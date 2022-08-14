@@ -1,0 +1,35 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".",
+      "rootDir": "src",
+      "outDir": "lib",
+      "jsx": "react",
+      "module": "CommonJS",
+      "moduleResolution": "node",
+      "target": "ESNext",
+      "allowSyntheticDefaultImports": true,
+      "forceConsistentCasingInFileNames": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "noEmit": false,
+      "allowJs": true,
+      "strict": true,
+      "checkJs": false,
+      "sourceMap": false,
+      "declaration": true,
+      "importHelpers": true,
+      "paths": { "@/*": ["src/*"] },
+      "plugins": [
+        {
+          "transform": "typescript-transform-paths"
+        },
+        {
+          "transform": "typescript-transform-paths",
+          "afterDeclarations": true
+        }
+      ]
+    },
+    "include": ["src"],
+    "exclude": ["node_modules"]
+  }
+  

@@ -1,0 +1,23 @@
+{
+  "name": "ts-util",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "clean": "rm -fr lib",
+    "commit": "git-cz",
+    "prebuild": "yarn run clean",
+    "build": "ttsc -p tsconfig.json",
+    "copyless": "copyfiles -u 1 'src/**/*.less' lib",
+    "type-check": "npx tsc --noEmit --skipLibCheck",
+    "test": "npx jest --passWithNoTests",
+    "test:update": "npx jest -u"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "copyfiles": "^2.4.1"
+  }
+}
