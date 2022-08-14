@@ -34,5 +34,12 @@ yarn-error.log*
 dist
 build
 packages/*/lib
+packages/*/.turbo
 build
 node_modules
+packages/*/package-lock.json
+packages/*/node_modules
+apps/*/package-lock.json
+apps/*/node_modules
+apps/*/yarn.lock
+packages/*/yarn.lock
